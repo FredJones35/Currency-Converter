@@ -13,7 +13,7 @@ public class Converter {
             return amount;
         }
        
-        String url_str = "https://v6.exchangerate-api.com/v6/59086f82debd8cbf1cbd9994/latest/" + currencyF;
+        String url_str = "https://v6.exchangerate-api.com/v6/YOUR-API-KEY/latest/" + currencyF;
         HttpClient client = HttpClient.newHttpClient(); //Creates an HTTP client
         HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url_str)).build(); //Creates an HTTP request using the URL
         double rate = 0;
